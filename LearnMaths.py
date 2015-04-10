@@ -4,15 +4,16 @@ def LearnToAdd ():
     while True:
         n1 = random.randint(0,9)
         n2 = random.randint (9,20)
-        print('What is the sum of \n:')
+        print('What is the sum of:  \n')
         problems = input(str(n1) + "+" + str(n2) + "= ")
         if int(problems) == n1 + n2:
             print('Correct!')
         else:
-            print('That is incorrect, try again.')
-        learn = input('Would you like to learn more?')
+            print('That is incorrect..')
+        learn = input('Would you like to learn more? ')
         if learn != 'yes':
-             break
+            print('Goodbye.')
+            break
 
 #print(LearnToAdd())
 
@@ -22,14 +23,15 @@ def LearnToMultiply ():
     while True:
         n1 = random.randint(0,9)
         n2 = random.randint (9,20)
-        print('What is the sum of \n:')
+        print('What is: \n')
         problems = input(str(n1) + "*" + str(n2) + "= ")
         if int(problems) == n1 * n2:
             print('Correct!')
         else:
-            print('That is incorrect, try again.')
-        learn = input('Would you like to learn more?')
+            print('That is incorrect.')
+        learn = input('Would you like to learn more? ')
         if learn != 'yes':
+             print('Goodbye.')
              break
 
 #print(LearnToMultiply())
@@ -41,14 +43,15 @@ def LearnToDivide ():
     while True:
         n1 = random.randint(0,9)
         n2 = random.randint (9,20)
-        print('What is the sum of \n:')
+        print('What is : \n')
         problems = input(str(n1) + "/" + str(n2) + "= ")
         if int(problems) == n1 / n2:
             print('Correct!')
         else:
-            print('That is incorrect, try again.')
-        learn = input('Would you like to learn more?')
+            print('That is incorrect.')
+        learn = input('Would you like to learn more? ')
         if learn != 'yes':
+             print('Goodbye.')
              break
 
 #print(LearnToMultiply())
@@ -60,14 +63,15 @@ def LearnToSubtract ():
     while True:
         n1 = random.randint(0,9)
         n2 = random.randint (9,20)
-        print('What is the sum of \n:')
+        print('What is: \n')
         problems = input(str(n2) + "-" + str(n1) + "= ") #Subtraction so bigger # first as we do not want a neg
         if int(problems) == n2 - n1:
             print('Correct!')
         else:
-            print('That is incorrect, try again.')
-        learn = input('Would you like to learn more?')
+            print('That is incorrect.')
+        learn = input('Would you like to learn more? ')
         if learn != 'yes':
+             print('Goodbye.')
              break
 
 #print(LearnToSubtract())
@@ -77,13 +81,13 @@ def LearnMaths():
     '''Takes input from user of what math operation they want to learn.
 Choices are: +, -, * and /'''
     Learn = input('What would you like to learn? ')
-    if Learn in ['Addition', 'addition', 'add', 'Add', 'adding', 'Adding']:
+    if Learn in ['Addition', 'addition', 'add', 'Add', 'adding', 'Adding', '+']:
         print(LearnToAdd())
-    elif Learn in ['subtraction', 'Subtraction', 'Subtract', 'subtract']:
+    elif Learn in ['subtraction', 'Subtraction', 'Subtract', 'subtract', '-']:
             print(LearnToSubtract())
-    elif Learn in ['Multiply', 'multiply', 'multiplication', 'Multiplication']:
+    elif Learn in ['Multiply', 'multiply', 'multiplication', 'Multiplication', '*']:
                 print(LearnToMultiply())
-    elif Learn in ['divide', 'Divide']:
+    elif Learn in ['divide', 'Divide', '/']:
                     print (LearnToDivide())
 print (LearnMaths())
 
