@@ -1,5 +1,5 @@
 def LearnMaths():
-    '''Takes input from user of what math operation they want to learn.
+    '''Takes input from user on what math operation they want to learn.
 Choices are: +, -, * and /'''
     Learn = input('What would you like to learn? ')
     if Learn in ['Addition', 'addition', 'add', 'Add', 'adding', 'Adding', '+']:
